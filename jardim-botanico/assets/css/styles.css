@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.plant-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.plant-card:hover {
+    transform: scale(1.02);
+}
+
+.plant-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.plant-info {
+    margin-top: 15px;
+}
+
+.qr-code {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .plant-card {
+        margin: 10px 0;
+    }
+}
