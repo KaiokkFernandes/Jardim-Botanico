@@ -7,14 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Página inicial */}
         <Route path="/" element={<Home />} />
-        
-        {/* Rota dinâmica para cada espécime */}
-        {/*
-          Usaremos o índice (ou algum ID) para identificar cada
-          elemento no array do data.json.
-        */}
         <Route path="/planta/:index" element={<PlantPage />} />
       </Routes>
     </Router>
