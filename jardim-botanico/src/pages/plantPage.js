@@ -161,7 +161,7 @@ function PlantPage() {
           </CuriositiesList>
         </>
       )}
-
+  // Teste
       <QrCodeWrapper>
         <QRCodeCanvas value={currentUrl} size={128} />
       </QrCodeWrapper>
