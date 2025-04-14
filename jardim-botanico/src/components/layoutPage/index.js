@@ -6,6 +6,8 @@ import { FiMenu } from "react-icons/fi";
 const LayoutContainer = styled.div`
   display: flex;
   height: 100vh;
+  margin: 0; 
+  padding: 0;
 `;
 
 const SidebarContainer = styled.div`
@@ -23,7 +25,7 @@ const SidebarContainer = styled.div`
 
 const ContentContainer = styled.div`
   flex: 1;
-  padding: 1rem;
+  padding: 0;
   margin-left: ${(props) => (props.sidebarVisible ? "250px" : "0")};
   transition: margin-left 0.3s ease-in-out;
 `;

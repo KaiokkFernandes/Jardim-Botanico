@@ -20,7 +20,7 @@ const AboutSection = () => (
       <p>Texto descritivo sobre a história, importância e características...</p>
     </div>
     <img 
-      src="/Jardim-Botanico.jpg" 
+      src="/jardim-botanicoAbout.png" 
       alt="Vista interna do jardim"
       style={{ borderRadius: '8px', maxWidth: '100%' }}
     />
