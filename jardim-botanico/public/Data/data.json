@@ -92,19 +92,6 @@
         ]
       },
       {
-        "nome_comum": "Jerivá",
-        "nome_cientifico": "Syagrus romanzoffiana",
-        "categoria": "Palmeira",
-        "imagem": "Jerivaldo.png",
-        "descricao": "Palmeira nativa do Brasil, de crescimento alto e com frutos alaranjados muito apreciados por aves e pequenos mamíferos.",
-        "habitat": "Matas ciliares, cerrados e áreas de floresta aberta.",
-        "curiosidades": [
-          "Frutos são importantes na alimentação da fauna local.",
-          "Utilizada em paisagismo urbano por sua beleza.",
-          "Atrai araras, tucanos, saguis e outros animais."
-        ]
-      },
-      {
         "nome_comum": "Fungo-toupeira",
         "nome_cientifico": "Kusaghiporia talpae",
         "categoria": "Fungo",

@@ -102,6 +102,13 @@ function PlantPage() {
   }, []);
 
   useEffect(() => {
+    window.speechSynthesis.onvoiceschanged = () => {
+      window.speechSynthesis.getVoices();
+    };
+  }, []);
+  
+
+  useEffect(() => {
     if (exposicao.length > 0) {
       setPlanta(exposicao[index]);
     }
@@ -116,6 +123,14 @@ function PlantPage() {
   const currentUrl = window.location.href;
 
   const handleSpeak = () => {
+    const synth = window.speechSynthesis;
+  
+    // Se estiver falando, cancela a fala atual
+    if (synth.speaking) {
+      synth.cancel();
+      return;
+    }
+  
     const textToSpeak = `
       ${planta.nome_comum},
       Nome científico: ${planta.nome_cientifico}.
@@ -124,11 +139,13 @@ function PlantPage() {
       Habitat: ${planta.habitat}.
       Curiosidades: ${planta.curiosidades ? planta.curiosidades.join(". ") : ""}
     `;
-    
+  
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = "pt-BR";
-    window.speechSynthesis.speak(utterance);
+    synth.speak(utterance);
   };
+  
+  
 
   return (
     <CardContainer>
